@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+div {
+    text-align: center;
+}
+
+.btnOp {
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+
+.btnReset {
+    display: block;
+    position: relative;
+    left: 80px;
+    margin: 3px;
+
+}
+
+.btnReset,
+.btnDec,
+.btnInc {
+    font-weight: bolder;
+    cursor: pointer;
+}

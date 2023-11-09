@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="first"></div>
+    <script>
+        const abc='https://api.github.com/users/prabhuvishal2018';
+        const xhr=new XMLHttpRequest();
+        xhr.open('GET',abc);
+         
+        xhr.onreadystatechange=function(){
+            if(this.readyState===4){
+                const data=JSON.parse(this.response);
+                console.log(data.id);
+            }
+        }
+        xhr.send();
+    </script>
+</body>
+</html>
